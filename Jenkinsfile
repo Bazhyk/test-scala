@@ -13,10 +13,9 @@ pipeline {
     stages{
         stage("Git Checkout"){
             steps{
-                echo "Descargando codigo del proyecto Scala"
                 deleteDir()
                 checkout scm
-                echo "Obtenida la version $version"
+                echo "$version"
             }
         }
         stage("Application Build"){
