@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'hseeberger/scala-sbt'
+            image 'broadinstitute/scala-baseimage'
         }
     }
     stages {
